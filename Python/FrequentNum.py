@@ -1,4 +1,4 @@
-a = [1,1,1,1,1,1,1,1,2,2,2,2,3,3,3,4,4,5]
+
 def frequent(list):
     dic = {}
     for num in list:
@@ -18,4 +18,5 @@ def frequent(list):
         if value == counter:
           print(key)
 
+a = [1,1,1,1,1,1,1,1,2,2,2,2,3,3,3,4,4,5]
 frequent(a)
