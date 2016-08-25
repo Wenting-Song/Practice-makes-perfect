@@ -8,7 +8,7 @@ public class frequency{
 		HashMap<String,Integer> freq = new HashMap<String,Integer>(); 
 		char[] charwords = words.toCharArray();
 		for(char ch:charwords){
-			if(ch == ''){  //here caused an erro
+			if(ch == ''){  //here caused an error
 				continue;
 			}
 		    if(map:containsKey(ch)){
