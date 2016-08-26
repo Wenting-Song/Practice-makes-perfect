@@ -1,17 +1,17 @@
 import java.util.HashMap;
+import java.util.Set;
+
 
 /*"Given an input string, return the frequency of the most frequent character."
 Your function should also handle the empty string as an input.
  */
 public class frequency{
 	public static int Max(String words){
-		HashMap<String,Integer> freq = new HashMap<String,Integer>(); 
+		HashMap<Character,Integer> map = new HashMap<Character,Integer>(); 
 		char[] charwords = words.toCharArray();
 		for(char ch:charwords){
-			if(ch == ''){  //here caused an error
-				continue;
-			}
-		    if(map:containsKey(ch)){
+			
+		    if(map.containsKey(ch)){
 		    	map.put(ch,map.get(ch)+1);
 		    	
 		    }else{
@@ -20,7 +20,7 @@ public class frequency{
 		}
 			
 		Set<Character> set = map.keySet();
-
+        int max = 0;
 	    for (char c : set) {
 	        if (max == 0 || map.get(c) > max) {
 	            max = map.get(c);
@@ -32,12 +32,13 @@ public class frequency{
 	            System.out.println(o);
 	        }
 	    }
-	    System.out.println("");
+	
+		return max;
 	}
 
 	public static void main(String[] args) {
 	   
-	   System.out.println(Max("aabbcccduuuuuuuu"));
+	   System.out.println(Max("aabbcccduuuu"));
 	}
 			
 		
@@ -53,6 +54,7 @@ public class frequency{
 		
 		
 	}
+	
 	
 	
 	
