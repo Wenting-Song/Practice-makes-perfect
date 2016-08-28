@@ -5,9 +5,6 @@ import java.util.Set;
 Your function should also handle the empty string as an input.
  */
 public class frequency {
-
-	//Thank you so much for Ben Babtsov's help:
-
 	    public static int Max(String words) {
 	        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
 	        int max = 0;
@@ -22,7 +19,7 @@ public class frequency {
 		
 	   
 
-	
+//Thank you so much for Ben Babtsov's help.	
 
 
 	public static void main(String[] args) {
