@@ -48,7 +48,7 @@ public static void main(String[] args) {
 	}
 }
 }
-//Ben's code are always more consise!
+//Ben's code are always more concise!
   /*public static int[] merge(int[] A, int[] B) {
     int[] combined = new int[A.length + B.length];
     int a = 0, b = 0;
