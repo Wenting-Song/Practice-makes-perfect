@@ -48,3 +48,20 @@ public static void main(String[] args) {
 	}
 }
 }
+//Ben's code are always more consise!
+  /*public static int[] merge(int[] A, int[] B) {
+    int[] combined = new int[A.length + B.length];
+    int a = 0, b = 0;
+    for (int i = 0; i < combined.length; i++) {
+      if (a >= A.length) {
+        combined[i] = B[b++];
+      } else if (b >= B.length) {
+        combined[i] = A[a++];
+      } else if (A[a] < B[b]) {
+        combined[i] = A[a++];
+      } else {
+        combined[i] = B[b++];
+      }
+    }
+    return combined;
+  }*/
