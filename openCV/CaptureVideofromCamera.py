@@ -2,10 +2,11 @@ import numpy as np
 import cv2
 
 cap = cv2.VideoCapture(0)
+"""Capture frame-by-frame;"Frame" will get the next frame in the camera (via "cap"). 
+    "Ret" will obtain return value from getting the camera frame, either true of false"""
 
 while(True):
-    """Capture frame-by-frame;"Frame" will get the next frame in the camera (via "cap"). 
-    "Ret" will obtain return value from getting the camera frame, either true of false"""
+
     ret, frame = cap.read()
 
     # Our operations on the frame come here
