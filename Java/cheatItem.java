@@ -15,21 +15,21 @@ import java.util.Arrays;
 
 public class cheatItem {
 	static int verifyItems(String[] origItems, float[] origPrices, String[] items, float[] prices) {
-		int count = 0;
-		for (int i = 0; i < items.length; i++) {
-			String item = items[i];
-			float price = prices[i];
+		HashMap<String, Float> map = new HashMap<>();
+		float startValue = 1;
+		for (int i = 0; i < origItems.length; i++) {
 
-			int index = Arrays.asList(origItems).indexOf(item);
-			float origPrice = origPrices[index];
-
-			if (price != origPrice) {
-				count++;
-				
-			}
+			map.put(origItems[i], origPrices[i]);
 
 		}
-		return count;
+		int count = 0;
+		 for (int i = 0; i < items.length; i++) {
+            float orig_price = map.get(items[i]);
+            if (Math.abs(orig_price - prices[i]) > 0.001) {
+                count++;
+            }
+        }
+        return count;
 	}
 
 	public static void main(String[] args) {
