@@ -15,8 +15,7 @@ public class Solution {
 
 		for (int c:nums2) {
 			if (map.containsKey(c)) {
-
-				int count = map.getOrDefault(c, 0);
+                                int count = map.get(c);
 				if (count > 1)
 					map.put(c, count - 1);
 				else {
