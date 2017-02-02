@@ -21,3 +21,8 @@ public class Solution {
         
     }
 }
+/*Boyer–Moore majority vote algorithm
+Think of it as a game, where many groups are fighting for the throne. 
+Each group has its own army. Any soldier can kill other group’s soldier only by suicidal attack. 
+Now no matter who ever fights with whom, or how it starts, the one with more than half will always win. 
+In worst half case, every group is aiming for the biggest group and nobody wins.*/
