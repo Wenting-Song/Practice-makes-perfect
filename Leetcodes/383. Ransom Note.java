@@ -30,3 +30,30 @@ public class Solution {
 		return true;
 	}
 }
+
+
+
+
+updated version:
+public class Solution {
+	public boolean canConstruct(String ransomNote, String magazine) {
+		HashMap<Character, Integer> map = new HashMap<>();
+		for (char c : magazine.toCharArray()) {
+			int count = map.getOrDefault(c, 0) + 1;
+			map.put(c, count);
+		}
+
+		for (int i = 0; i < ransomNote.length(); i++) {
+			if (!map.containsKey(ransomNote.charAt(i)))
+				return false;
+			else {
+				int n = map.get(ransomNote.charAt(i));
+				n--;
+				map.put(ransomNote.charAt(i),n);
+				if(n==0) map.remove(ransomNote.charAt(i));
+			}
+		}
+		return true;
+
+	}
+}
